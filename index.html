@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Out - One Life for Active Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/zo main logo.jpg" alt="Zone Out Logo" class="nav-logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-primary" onclick="openUserModal()">Get Notified</button>
+                <button class="btn-primary" onclick="openTurfModal()">Join as Turf</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-logo">
+                    <img src="images/zone out logo png.png" alt="Zone Out Logo" class="hero-logo-image">
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">ONE LIFE</span>
+                    <br>FOR ACTIVE LIFE
+                </h1>
+                <p class="hero-subtitle">
+                    Your ultimate sports turf aggregator platform. Book, play, and experience the future of sports facility management.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-hero-primary" onclick="openUserModal()">
+                        <i class="fas fa-bell"></i>
+                        Get Early Access
+                    </button>
+                    <button class="btn-hero-primary" onclick="openTurfModal()">
+                        <i class="fas fa-handshake"></i>
+                        Partner With Us
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-futbol"></i>
+                    <span>Football</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-basketball-ball"></i>
+                    <span>Basketball</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-table-tennis"></i>
+                    <span>Badminton</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-running"></i>
+                    <span>Athletics</span>
+                </div>
+                <div class="floating-card card-5">
+                    <i class="fas fa-baseball-ball"></i>
+                    <span>Cricket</span>
+                </div>
+                <div class="floating-card card-6">
+                    <i class="fas fa-table-tennis"></i>
+                    <span>Pickleball</span>
+                </div>
+                <div class="floating-card card-7">
+                    <i class="fas fa-trophy"></i>
+                    <span>Tournaments</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Revolutionizing Sports Infrastructure</h2>
+                <p class="section-subtitle">We're building the future of sports facility management in India</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Next-Generation Platform</h3>
+                    <p>Zone Out is a cutting-edge turf aggregator and management platform designed to eliminate manual hassles and maximize revenue for turf owners.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bridge"></i>
+                    </div>
+                    <h3>Bridging the Gap</h3>
+                    <p>We connect turf operators and players through advanced technology, automation, and data insights — making every slot count.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To create an ecosystem where every turf operates efficiently, earns fairly, and is accessible to every player with just a tap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Industry Challenges We Solve</h2>
+                <p class="section-subtitle">Despite rising interest in sports, turf owners face persistent challenges</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">❌</div>
+                    <h3>Slot Mismanagement</h3>
+                    <p>Overlaps, missed bookings, and inefficient slot tracking</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📞</div>
+                    <h3>Manual Workload</h3>
+                    <p>Endless calls and WhatsApp messages for every booking</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Payment Uncertainty</h3>
+                    <p>Last-minute cancellations and unpaid slots</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">👀</div>
+                    <h3>Low Visibility</h3>
+                    <p>Minimal marketing and limited reach to new players</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🕐</div>
+                    <h3>Pricing Inefficiency</h3>
+                    <p>No structured system for peak and non-peak pricing</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📊</div>
+                    <h3>Lack of Data Insights</h3>
+                    <p>No analytics to understand customer behavior</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Zone Out Transforms<br>Your Business</h2>
+                <p class="section-subtitle">Comprehensive solutions for modern turf management</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-number">01</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Real-Time Slot Management</h3>
+                    <p>Centralized system that updates every booking in real-time — no double bookings, no confusion.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">02</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Automated Booking System</h3>
+                    <p>Players book and pay directly through the app, while owners receive instant confirmations.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">03</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secured Payments</h3>
+                    <p>Integrated online payment ensures upfront booking fees — reducing no-shows and losses.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">04</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketing & Visibility</h3>
+                    <p>We promote partner turfs through our app, social media, and sports communities.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">05</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Dynamic Pricing Engine</h3>
+                    <p>Automatically adjusts prices for peak and non-peak hours to maximize revenue.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-number">06</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Track bookings, customers, peak timings, and revenue growth with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Turfs Choose Zone Out</h2>
+            </div>
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Minimal platform fee</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant settlements</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dedicated support team</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Early partner marketing benefits</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Growth through technology, not commission cuts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-choose-visual">
+                    <div class="stats-card">
+                        <h3>25+</h3>
+                        <p>Cities Researched</p>
+                    </div>
+                    <div class="stats-card">
+                        <h3>2K+</h3>
+                        <p>Early Registrations</p>
+                    </div>
+                    <div class="stats-card">
+                        <h3>24/7</h3>
+                        <p>Support Ready</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Turf Business?</h2>
+                <p>Join the Zone Out network and experience the future of sports facility management</p>
+                <div class="cta-buttons">
+                    <button class="btn-cta-primary" onclick="openTurfModal()">
+                        <i class="fas fa-handshake"></i>
+                        Partner With Us
+                    </button>
+                    <button class="btn-cta-primary" onclick="openUserModal()">
+                    <i class="fas fa-bell"></i>
+                    Get Notified
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/zo main logo.jpg" alt="Zone Out Logo" class="footer-logo-img">
+                    <p>One Life for Active Life</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> zoneout.work@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91-8100301801</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2025 Zone Out. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- User Notification Modal -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeUserModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Get Early Access</h2>
+                <p>Be the first to experience the future of sports booking</p>
+            </div>
+            <form id="userForm" class="modal-form">
+                <div class="form-group">
+                    <label for="userEmail">Email Address *</label>
+                    <input type="email" id="userEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPhone">Mobile Number (Optional)</label>
+                    <input type="tel" id="userPhone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="userSports">Preferred Sports</label>
+                    <select id="userSports" name="sports">
+                        <option value="">Select your favorite sport</option>
+                        <option value="football">Football</option>
+                        <option value="cricket">Cricket</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="pickleball">Pickleball</option>
+                        <option value="tournaments">Tournaments</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-modal-primary">
+                    <i class="fas fa-bell"></i>
+                    Notify Me
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Turf Registration Modal -->
+    <div id="turfModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTurfModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Join Zone Out Network</h2>
+                <p>Transform your turf business with our platform</p>
+            </div>
+            <form id="turfForm" class="modal-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="turfName">Turf Name *</label>
+                        <input type="text" id="turfName" name="turfName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ownerName">Owner Name *</label>
+                        <input type="text" id="ownerName" name="ownerName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="turfEmail">Email Address *</label>
+                        <input type="email" id="turfEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="turfPhone">Mobile Number *</label>
+                        <input type="tel" id="turfPhone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="turfLocation">Turf Location *</label>
+                    <input type="text" id="turfLocation" name="location" placeholder="City, State" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="turfSports">Sports Offered *</label>
+                        <select id="turfSports" name="sports" required>
+                            <option value="">Select primary sport</option>
+                            <option value="football">Football</option>
+                            <option value="cricket">Cricket</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="badminton">Badminton</option>
+                            <option value="tennis">Tennis</option>
+                            <option value="pickleball">Pickleball</option>
+                            <option value="tournaments">Tournaments</option>
+                            <option value="multi-sport">Multi-Sport</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="turfSize">Turf Size</label>
+                        <select id="turfSize" name="size">
+                            <option value="">Select size</option>
+                            <option value="small">Small (< 5000 sq ft)</option>
+                            <option value="medium">Medium (5000-10000 sq ft)</option>
+                            <option value="large">Large (> 10000 sq ft)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="turfMessage">Additional Information</label>
+                    <textarea id="turfMessage" name="message" placeholder="Tell us about your turf, current challenges, or any specific requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn-modal-primary">
+                    <i class="fas fa-handshake"></i>
+                    Join Network
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
